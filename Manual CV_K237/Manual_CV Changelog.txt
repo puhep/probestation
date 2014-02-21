@@ -1,0 +1,29 @@
+Manual CV Changelog
+
+V1.0
+
+-Changed file name parameter from Wafer ID to Name of Test
+-Added compliance check
+-Added bias level indicator
+-Added lower voltage limit option
+-Added 2nd parameter graph
+-Changed the excell file from xls to csv
+-placed an order on the creation of the excell file (a file is created then the spreadsheet is created)
+-Added a record in the excell file for 2nd parameter and leakage current
+-Added a record of LCR parameters in the excell file
+-Made the voltage gradually step down
+-Added go to local for K237
+
+
+V1.1
+
+-Added XML output
+-Changed logic for voltage step down cycle
+
+V1.2
+
+-Added user input parameters for XML file
+-Added UPGRADE_FPIX_SNSWAFER_IV input tag for XML file
+-Added Voltage start option
+-Added emergency stop
+-Moved all input information out of XML Subvi's and is now determined in the main VI

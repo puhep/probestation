@@ -1,0 +1,25 @@
+V1.1
+
+-Added an input array to include NAME (for XML_Data_Set), VALUE (XML_Data_Set), NAME (XML_Header), and RUN_NAME (XML_Header)
+
+XML_Header:
+
+-Changed NAME node input from being the same as Serial Number to a uniquely defined value from input array
+-Changed RUN_NAME node input from being a static entry to a uniquely defined value from input array
+
+XML_Data_Set:
+
+-Added PREDEFINED_ATTRIBUTES node as a child node of PART
+-Added ATTRIBUTES node as a child node of PREDEFINED_ATTRIBUTES
+-Added VALUE Node as a child node of ATTRIBUTES
+-Added NAME Node as a child node of ATTRIBUTES
+-Changed COMMENT_DESCRIPTION input to be determined uniquely for XML_Data_Set
+-Changed input array to include NAME and VALUE entries for XML_Data_Set
+
+V1.2
+
+XML_Data_Set:
+
+-Extensively reworked XML_Data_Set.vi structure
+-No longer produces PREDEFINED_ATTRIBUTES node or any of its child nodes
+-Input array no longer takes entries for NAME and VALUE

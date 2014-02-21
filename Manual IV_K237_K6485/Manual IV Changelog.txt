@@ -1,0 +1,32 @@
+Manual IV Changelog
+
+IV_6485:
+-changed measurement VIs from K2410 to K6485
+-Setup parameters for K237 were changed
+-Contact check appears to have been removed
+
+V1.0:
+-Added lower voltage limit option
+-Changed graph plots to linear
+-Added XML output
+-Added user input to fill XML data fields
+-Changed file save name field from Wafer ID to Name of Test
+-Changed Excel file format to .csv from .xls
+-Rewired Spreadsheet file creation VIs to ensure title data is not lost
+-Added voltage ramp down and Go To Local (GTL) for K237
+-Setup parameters for K237 were changed
+
+V1.1:
+-Updated XML creation VIs
+-Added GTL for K6485s
+-Added absolute value toggle switch for data output
+
+V1.2:
+-Rewired absolute value toggle
+-Changed voltage ramp down logic
+
+V1.4:
+-Setup parameters for K237 were changed
+-Added Global Stop
+-Changed user input options for XML fields
+-Moved all input information out of XML SubVi's and is now determined in the main VI
