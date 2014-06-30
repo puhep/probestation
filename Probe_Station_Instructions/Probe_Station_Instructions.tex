@@ -14,7 +14,7 @@
 
 \begin{center}
 \bf \LARGE
-P3MD LAB -\\PROBE STATION INSTRUCTIONS v1.0
+P3MD LAB -\\PROBE STATION INSTRUCTIONS v2.0
 \end{center}
 \vspace{5mm}
 
@@ -77,7 +77,9 @@ Figure 3 also shows the four probe needles. There are controls for moving the pr
 
 %Section 3 - Probes and cabling
 \section{Probes and cabling}
-The output of K237 provides the bias to the chuck, which goes to the probe station. Also, the outputs from probes are connected to Pins 1 and 2 on the top of the probe station. These outputs are connected by BNC connectors to the Keithley 6485 picometers. All the COM terminals of 6485 and 237 are connected together to form a common ground. All units are also connected to a PC using GPIB cables. These different GPIB cables are daisy-chained together and all the bias voltages and current measurements can be displayed and recorded on the computer using GPIB connections. LabView code is used to measure both IV and CV data and automatically apply bias using the display panel on the computer.The IV measurement is done first over all pad positions defined in the wafer map. After the IV measurement is done, CV measurements are taken. The LCR meter must be manually connected as in Figures 4 and 5. Output Hi and Output Lo pins of K237 are connected to red and black input pins at the back of the LCR meter as shown in Figure 5. Also, the RED pins at the front of the LCR meter are connected to the Chuck bias at the back of the probe chamber (similar to how the K237 was connected for the IV test). The black pin at the front of the LCR meter receives the measured capacitance value from the probe needle and is connected back to the LCR meter via Pin 1.
+The output of K237 provides the bias to the chuck, which goes to the probe station. Also, the outputs from probes are connected to Pins 1 and 2 on the top of the probe station. These outputs are connected by BNC connectors to the Keithley 6485 picometers. All the COM terminals of 6485 and 237 are connected together to form a common ground. All units are also connected to a PC using GPIB cables. These different GPIB cables are daisy-chained together and all the bias voltages and current measurements can be displayed and recorded on the computer using GPIB connections. LabView code is used to measure both IV and CV data and automatically apply bias using the display panel on the computer.
+
+The IV measurement is done first over all pad positions defined in the wafer map. After the IV measurement is done, CV measurements are taken. The LCR meter must be manually connected as in Figures 4 and 5. Output Hi and Output Lo pins of K237 are connected to red and black input pins at the back of the LCR meter as shown in Figure 5. Also, the RED pins at the front of the LCR meter are connected to the Chuck bias at the back of the probe chamber (similar to how the K237 was connected for the IV test). The black pin at the front of the LCR meter receives the measured capacitance value from the probe needle and is connected back to the LCR meter via Pin 1.
 
 \begin{figure}[h!]
 	\centering
