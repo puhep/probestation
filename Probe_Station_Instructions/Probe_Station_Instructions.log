@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 JUN 2014 12:12
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 JUN 2014 16:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -327,92 +327,99 @@ Overfull \hbox (13.92717pt too wide) in paragraph at lines 135--137
  is al-ways PRESSED
  []
 
+[7]
 
-./Probe_Station_Instructions.tex:154: LaTeX Error: Something's wrong--perhaps a
+./Probe_Station_Instructions.tex:155: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 \begin{enumerate}
+l.155 \begin{enumerate}
                        
 ? 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 155.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 156.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 155.
- [7]
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 156.
+ [8]
 
-./Probe_Station_Instructions.tex:181: LaTeX Error: Something's wrong--perhaps a
+./Probe_Station_Instructions.tex:183: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.181 \begin{enumerate}
+l.183 \begin{enumerate}
                        
 ? 
-[8]
+<wafer.png, id=50, 917.4275pt x 681.54625pt>
+File: wafer.png Graphic file (type png)
+ <use wafer.png>
+Package pdftex.def Info: wafer.png used on input line 197.
+(pdftex.def)             Requested size: 301.00192pt x 223.61101pt.
 
-./Probe_Station_Instructions.tex:198: LaTeX Error: Something's wrong--perhaps a
+
+./Probe_Station_Instructions.tex:206: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.198 \begin{enumerate}
+l.206 \begin{enumerate}
                        
 ? 
+[9 <./wafer.png>]
 
-./Probe_Station_Instructions.tex:212: LaTeX Error: Something's wrong--perhaps a
+./Probe_Station_Instructions.tex:220: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.212 \begin{enumerate}
+l.220 \begin{enumerate}
                        
 ? 
-[9]
+[10]
 Missing character: There is no Õ in font cmr10!
- [10]
+ [11]
 
-./Probe_Station_Instructions.tex:248: LaTeX Error: Something's wrong--perhaps a
+./Probe_Station_Instructions.tex:257: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.248 \begin{enumerate}
+l.257 \begin{enumerate}
                        
 ? 
-[11] (./Probe_Station_Instructions.aux) ) 
+[12] (./Probe_Station_Instructions.aux) ) 
 Here is how much of TeX's memory you used:
- 2738 strings out of 493488
- 37499 string characters out of 3141326
- 103141 words of memory out of 3000000
- 6028 multiletter control sequences out of 15000+200000
+ 2743 strings out of 493488
+ 37563 string characters out of 3141326
+ 102141 words of memory out of 3000000
+ 6032 multiletter control sequences out of 15000+200000
  6163 words of font info for 22 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,6n,35p,728b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,6n,35p,728b,238s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb>
-Output written on Probe_Station_Instructions.pdf (11 pages, 4594551 bytes).
+Output written on Probe_Station_Instructions.pdf (12 pages, 5102731 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

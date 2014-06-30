@@ -130,7 +130,7 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 \section{Wafer loading}
 \begin{enumerate}
 \begin{enumerate}
-	\item Check if lever arm is down. If not, lower the lever arm.
+	\item Check if the lever arm is down. If not, lower the lever arm.
 	\item Make sure the vacuum pump is turned on.
 	\item Take a wafer from the dry box cabinet in the soft-wall clean room. Use the vacuum holder to lift the wafer from the wafer box. Use tweezers or spatula-like pinchers to hold the end of wafer while vacuum holder is still on. Be very careful when handling the wafer.
 	\\{\color{red}IMPORTANT: Make sure that the vacuum holder black button is always PRESSED ON when the wafer is held; otherwise the wafer will fall on ground.}
@@ -148,6 +148,7 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 \end{enumerate}
 
 
+\newpage
 %Section 6 - Wafer alignment
 \section{Wafer alignment}
 \begin{enumerate}
@@ -175,6 +176,7 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 \end{enumerate}
 
 
+\newpage
 %Section 7 - Setting up the wafer map
 \section{Setting up the wafer map}
 \begin{enumerate}
@@ -190,6 +192,12 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 \end{enumerate}
 \end{enumerate}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{wafer.png}
+	\caption{Site layout for 6-inch wafer.}
+\end{figure}
+
 
 %Section 8 - Probe tip setup
 \section{Probe tip setup}
@@ -200,7 +208,7 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 	\item Move the probes above their respective pads. The probe tip that comes in at an angle is usually used for the Active area and the other probe tip is used for the Guard-ring.
 	\vspace{1mm}
 	\\NOTE: Make sure that the wires connecting the probe tips to the K6485s are correctly labeled, the K6485 with GPIB address 10 is used for measuring the Guard-ring and the K6485 with GPIB address 14 is used for measuring the Active area.
-	\item Using the knobs on the probe station, lower the probe tips into contact with the pads. If the K6485s are in local mode you should hear a set of clicks when the probe tips first make contact with the pads and the K6485s should also be reading small current value.
+	\item Using the knobs on the probe station, lower the probe tips into contact with the pads. If the K6485s are in local mode you should hear a set of clicks when the probe tips first make contact with the pads and the K6485s should also be reading small current value. You should also see the probe tips move forward slightly when they make contact.
 	\item Turn the light off.
 \end{enumerate}
 \end{enumerate}
@@ -213,6 +221,7 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 	\item Open ``Automatic\_IV\_CV\_with\_XML\_Global\_Stop\_V1.1''.
 	\item On the front panel, set values for voltage ranges and voltage step size for both the IV and CV scans. Also, make sure the site number is set to the appropriate values for the IV and CV scans (For the 6-inch wafer there should be 22 sites for the IV scan and 12 for the CV scan). Finally make sure the file path is set to an appropriate location as this is where the data will be saved.
 	\item Run the program.
+\newpage
 	\item You will be prompted to fill out various fields that are used to document the data:
 	\begin{enumerate}
 		\item {\it Wafer ID\#}: The ID number of the wafer currently being tested.
@@ -248,7 +257,7 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 \begin{enumerate}
 	\item Make sure that all the instruments are in Standby and sourcing no voltage.
 	\item Turn the light ON.
-	\item Manually raise the probe tips using the knobs on the probe station.
+	\item Manually raise the probe tips well above the wafer using the knobs on the probe station.
 	\item Click the {\it ``Move the Z Stage to separate''} button in the Motion Control window.
 	\item Click the {\it ``Wafer Load''} button the Nucleus Motion Control window. This will bring the chuck forward so that it can be pulled out and accessed easily.
 	\item Open the micro-chamber gate. Pull out the chuck and secure it in place.
@@ -256,7 +265,7 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 	\item Use the Vacuum Pen and spatula to very carefully remove the wafer from the conductive rubber. This step can take a very long time and it is very important that the wafer is removed carefully as the rubber will have adhered to the wafer, making peeling the wafer off of the rubber very tricky.
 	\item Place the wafer back in its case. Make sure that you place it in the correct side of the wafer container.
 	\item Place the wafer container back in the dry box.
-	\item Close the micro-chamber gate.
+	\item Return the chuck and close the micro-chamber gate.
 	\item Turn the light OFF.
 \end{enumerate}
 \end{enumerate}
