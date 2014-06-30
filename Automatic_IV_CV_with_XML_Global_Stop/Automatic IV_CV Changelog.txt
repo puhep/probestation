@@ -1,0 +1,43 @@
+Automatic IV/CV Changelog
+
+With_XML:
+-Added XML output
+-Added Voltage step down
+-Added LCR parameters to Excel file
+
+With_XML_Global_stop:
+-Added reinitialize to default for archive graphs
+-Added global stop
+-Added ability for user to fill XML data fields
+-Added folder creation functionality to store all XML/Excel files for a particular wafer
+-Added wafer site selection on front panel
+-Reorganized and modified Archive graphs to include slim-edge sensor graphs
+-Added automatic naming functionality for XML/Excel files corresponding to the naming conevention
+-Added compliance check
+
+V1.0:
+-Voltage step down structure for both IV/CV switched to inactive (so the output voltage is directly set to 0V)
+-Added contact check for IV scan
+-Moved the Bias polarity parameter to start of entire sequence structure
+-Changed EXTENSION_TABLE_NAME constant from 2012 6-inch Prototype to PH1_FPIX_SNSRWAFR_IV for IV and PH1_FPIX_SNSRWAFR_CAP for CV
+-Added input array entries for Name (XML_Header), Run Name (XML_Header)
+-Added a subvi to create all of the labels for the XML tags, the excell table title, and file name, for both IV and CV
+-Changed Wafer ID # input from a string input to a numerical input
+-Changed XML data tag for Total Current from TOTAL_CURRENT_AMP to TOT_CURRENT_AMP
+-Added Status indicator
+-Changed creation of IV/CV .csv files to occur only when a scan is actually made
+-Added Pass/Fail Indicators
+-Added Pass/Fail Output file for each scanned sensor
+-Added a separate file that documents all the sites that did not pass the contact check
+-Made a separate subfolder for XML files
+-Made CV scan skip sites that failed contact check for IV scan
+-Changed File name for XML and .csv data file to simply contain the serial number of the scanned part
+-Added parameter values (Bias polarity, Vlimit, Vstep, compliance level) to .csv data file for IV scan in the same manner as CV file
+-Changed the Contact Check test voltage from 1 ---> 3 volts
+
+V1.1:
+-Moved file path to front panel
+-Moved LCR parameter append to inside case structure so that it does not try to append parameters to a non-existent file (e.g. if a site is skipped)
+-Added a retry option for the contact check
+-Changed Test Name Subfolder to check if a folder with the same name exists and if it does it alters the file name to avoid conflict
+-Changed compliance to 3e-5 ( from 1e-5)
