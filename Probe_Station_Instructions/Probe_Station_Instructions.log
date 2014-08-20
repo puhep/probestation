@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 JUN 2014 16:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  20 AUG 2014 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,7 +289,13 @@ Package pdftex.def Info: figures/outputs2.png used on input line 93.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4] [5 <./figures/outputs1.png> <./figures/outputs2.png>]
+[4] <figures/nucleus_icon.png, id=28, 54.2025pt x 54.2025pt>
+File: figures/nucleus_icon.png Graphic file (type png)
+
+<use figures/nucleus_icon.png>
+Package pdftex.def Info: figures/nucleus_icon.png used on input line 106.
+(pdftex.def)             Requested size: 21.50154pt x 21.50197pt.
+ [5 <./figures/outputs1.png> <./figures/outputs2.png>]
 
 ./Probe_Station_Instructions.tex:115: LaTeX Error: Something's wrong--perhaps a
  missing \item.
@@ -301,17 +307,34 @@ Type  H <return>  for immediate help.
 l.115 \begin{enumerate}
                        
 ? 
-<figures/chuck1.png, id=34, 309.7974pt x 279.444pt>
+<figures/wafer_load.png, id=35, 36.135pt x 36.135pt>
+File: figures/wafer_load.png Graphic file (type png)
+
+<use figures/wafer_load.png>
+Package pdftex.def Info: figures/wafer_load.png used on input line 116.
+(pdftex.def)             Requested size: 21.50154pt x 21.5014pt.
+
+<figures/vacuum_off.png, id=36, 38.1425pt x 38.1425pt>
+File: figures/vacuum_off.png Graphic file (type png)
+
+<use figures/vacuum_off.png>
+Package pdftex.def Info: figures/vacuum_off.png used on input line 118.
+(pdftex.def)             Requested size: 21.50154pt x 21.50223pt.
+
+<figures/chuck1.png, id=37, 309.7974pt x 279.444pt>
 File: figures/chuck1.png Graphic file (type png)
  <use figures/chuck1.png>
 Package pdftex.def Info: figures/chuck1.png used on input line 125.
 (pdftex.def)             Requested size: 195.65288pt x 176.48984pt.
 
-<figures/chuck2.png, id=35, 238.0092pt x 220.6644pt>
+<figures/chuck2.png, id=38, 238.0092pt x 220.6644pt>
 File: figures/chuck2.png Graphic file (type png)
  <use figures/chuck2.png>
 Package pdftex.def Info: figures/chuck2.png used on input line 126.
 (pdftex.def)             Requested size: 191.3552pt x 177.41391pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ./Probe_Station_Instructions.tex:133: LaTeX Error: Something's wrong--perhaps a
@@ -324,105 +347,171 @@ Type  H <return>  for immediate help.
 l.133 \begin{enumerate}
                        
 ? 
-[6 <./figures/chuck1.png> <./figures/chuck2.png>]
+
 Overfull \hbox (13.92717pt too wide) in paragraph at lines 136--138
 []\OT1/cmr/m/n/10.95 IMPORTANT: Make sure that the vac-uum holder black but-ton
  is al-ways PRESSED
  []
 
-[7]
+[6 <./figures/nucleus_icon.png> <./figures/wafer_load.png> <./figures/vacuum_of
+f.png>] <figures/vacuum_on.png, id=46, 36.135pt x 36.135pt>
+File: figures/vacuum_on.png Graphic file (type png)
 
-./Probe_Station_Instructions.tex:156: LaTeX Error: Something's wrong--perhaps a
+<use figures/vacuum_on.png>
+Package pdftex.def Info: figures/vacuum_on.png used on input line 141.
+(pdftex.def)             Requested size: 21.50154pt x 21.5014pt.
+
+<figures/wafer_center.png, id=47, 36.135pt x 36.135pt>
+File: figures/wafer_center.png Graphic file (type png)
+
+<use figures/wafer_center.png>
+Package pdftex.def Info: figures/wafer_center.png used on input line 147.
+(pdftex.def)             Requested size: 21.50154pt x 21.5014pt.
+ [7 <./figures/chuck1.png> <./figures/chuck2.png> <./figures/vacuum_on.png> <./
+figures/wafer_center.png>]
+
+./Probe_Station_Instructions.tex:157: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \begin{enumerate}
+l.157 \begin{enumerate}
                        
 ? 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 157.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 158.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 157.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 158.
  [8]
 
-./Probe_Station_Instructions.tex:184: LaTeX Error: Something's wrong--perhaps a
+./Probe_Station_Instructions.tex:185: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184 \begin{enumerate}
+l.185 \begin{enumerate}
                        
 ? 
-<figures/wafer.png, id=50, 917.4275pt x 681.54625pt>
+<figures/wafer.png, id=60, 917.4275pt x 681.54625pt>
 File: figures/wafer.png Graphic file (type png)
  <use figures/wafer.png>
-Package pdftex.def Info: figures/wafer.png used on input line 198.
+Package pdftex.def Info: figures/wafer.png used on input line 199.
 (pdftex.def)             Requested size: 301.00192pt x 223.61101pt.
 
 
-./Probe_Station_Instructions.tex:207: LaTeX Error: Something's wrong--perhaps a
+./Probe_Station_Instructions.tex:208: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.207 \begin{enumerate}
+l.208 \begin{enumerate}
                        
 ? 
 [9 <./figures/wafer.png>]
+<figures/z_stage_contact_off.png, id=64, 36.135pt x 24.09pt>
+File: figures/z_stage_contact_off.png Graphic file (type png)
 
-./Probe_Station_Instructions.tex:221: LaTeX Error: Something's wrong--perhaps a
+<use figures/z_stage_contact_off.png>
+Package pdftex.def Info: figures/z_stage_contact_off.png used on input line 209
+.
+(pdftex.def)             Requested size: 21.50154pt x 14.33426pt.
+
+<figures/z_stage_contact_on.png, id=65, 36.135pt x 24.09pt>
+File: figures/z_stage_contact_on.png Graphic file (type png)
+
+<use figures/z_stage_contact_on.png>
+Package pdftex.def Info: figures/z_stage_contact_on.png used on input line 209.
+
+(pdftex.def)             Requested size: 21.50154pt x 14.33426pt.
+
+
+./Probe_Station_Instructions.tex:222: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 \begin{enumerate}
+l.222 \begin{enumerate}
                        
 ? 
-[10]
+[10 <./figures/z_stage_contact_off.png> <./figures/z_stage_contact_on.png>]
 Missing character: There is no Õ in font cmr10!
- [11]
 
-./Probe_Station_Instructions.tex:258: LaTeX Error: Something's wrong--perhaps a
+<figures/z_stage_separate_on.png, id=71, 36.135pt x 24.09pt>
+File: figures/z_stage_separate_on.png Graphic file (type png)
+
+<use figures/z_stage_separate_on.png>
+Package pdftex.def Info: figures/z_stage_separate_on.png used on input line 242
+.
+(pdftex.def)             Requested size: 21.50154pt x 14.33426pt.
+File: figures/z_stage_contact_off.png Graphic file (type png)
+ <use figures/z_stage_contact_off.png>
+Package pdftex.def Info: figures/z_stage_contact_off.png used on input line 242
+.
+(pdftex.def)             Requested size: 21.50154pt x 14.33426pt.
+
+[11 <./figures/z_stage_separate_on.png>]
+
+./Probe_Station_Instructions.tex:259: LaTeX Error: Something's wrong--perhaps a
  missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.258 \begin{enumerate}
+l.259 \begin{enumerate}
                        
 ? 
-[12] (./Probe_Station_Instructions.aux) ) 
+<figures/z_stage_separate_off.png, id=76, 36.135pt x 24.09pt>
+File: figures/z_stage_separate_off.png Graphic file (type png)
+
+<use figures/z_stage_separate_off.png>
+Package pdftex.def Info: figures/z_stage_separate_off.png used on input line 26
+3.
+(pdftex.def)             Requested size: 21.50154pt x 14.33426pt.
+File: figures/z_stage_separate_on.png Graphic file (type png)
+ <use figures/z_stage_separate_on.png>
+Package pdftex.def Info: figures/z_stage_separate_on.png used on input line 263
+.
+(pdftex.def)             Requested size: 21.50154pt x 14.33426pt.
+File: figures/wafer_load.png Graphic file (type png)
+
+<use figures/wafer_load.png>
+Package pdftex.def Info: figures/wafer_load.png used on input line 264.
+(pdftex.def)             Requested size: 21.50154pt x 21.5014pt.
+File: figures/vacuum_off.png Graphic file (type png)
+ <use figures/vacuum_off.png>
+Package pdftex.def Info: figures/vacuum_off.png used on input line 266.
+(pdftex.def)             Requested size: 21.50154pt x 21.50223pt.
+ [12 <./figures/z_stage_separate_off.png>] (./Probe_Station_Instructions.aux) )
+ 
 Here is how much of TeX's memory you used:
- 2744 strings out of 493488
- 37859 string characters out of 3141326
+ 2789 strings out of 493488
+ 39143 string characters out of 3141326
  102153 words of memory out of 3000000
- 6032 multiletter control sequences out of 15000+200000
+ 6068 multiletter control sequences out of 15000+200000
  6163 words of font info for 22 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,6n,35p,728b,238s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb>
-Output written on Probe_Station_Instructions.pdf (12 pages, 5102731 bytes).
+ 38i,6n,35p,728b,318s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Probe_Station_Instructions.pdf (12 pages, 5118095 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

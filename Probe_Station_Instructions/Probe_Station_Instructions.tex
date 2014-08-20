@@ -15,7 +15,7 @@
 
 \begin{center}
 \bf \LARGE
-P3MD LAB -\\PROBE STATION INSTRUCTIONS v2.0
+P3MD LAB -\\PROBE STATION INSTRUCTIONS v2.1
 \end{center}
 \vspace{5mm}
 
@@ -55,7 +55,7 @@ Figure 2 shows the major components of Probe Station unit. The unit consists of:
 	\caption{Light switch, Vacuum wafer holder, Joystick, and Focusing dial.}
 \end{figure}
 
-The probe station will be used for measuring IV and CV of the different pad positions on a wafer. The K6485 are Picoammeters or Picometers used for measuring currents from pads on the wafer. Th Keithley 237 Source meter is used to supply bias to the wafer using chuck bias. The LCR meter is used for low frequency as well as high frequency CV measurements (limit is -500V). The switching matrix is used to switch between IV and CV measurements directly, without changing the setup. The Temptronic thermal system is used to maintain the wafer at a given temperature.
+The probe station will be used for measuring IV and CV of the different pad positions on a wafer. The K6485 are Picoammeters or Picometers used for measuring currents from pads on the wafer. Th Keithley 237 Source meter is used to supply bias to the wafer using chuck bias. The LCR meter is used for low frequency as well as high frequency CV measurements (limit is -500V). The switching matrix is used to switch between IV and CV measurements directly, without changing the setup (not yet used for the current setup). The Temptronic thermal system is used to maintain the wafer at a given temperature.
 
 Figure 2 shows the various instruments used for focusing and holding the wafer. The A-Zoom box provides the light for viewing the wafer during setup and needs to be switched off manually when the measurements are made. A-Zoom also provides focusing using two meter dials as shown. Figure 2 also shows the joystick which can be used for moving the focus to various positions on the wafer. The vacuum wafer holder is also shown in Figure 2. The vacuum holder only works when the switch on its side is pressed on. Letting go of the switch turns off the vacuum and wafer will fall down, SO PLEASE MAKE SURE TO KEEP PRESSING THE SWITCH ON WHILE USING THE VACUUM HOLDER. 
 
@@ -103,7 +103,7 @@ NOW YOU ARE READY TO SET UP THE SOFTWARE!}
 
 %Section 4 - Run "Nucleus" on PC's desktop
 \section{Run Nucleus on PC's desktop}
-Open Nucleus by double-clicking the Nucleus icon on the desktop. The login credentials are as follows:
+Open Nucleus by double-clicking the Nucleus icon \includegraphics[width=.05\textwidth]{nucleus_icon.png} on the desktop. The login credentials are as follows:
 
 \hspace{7mm}Login name: Superuser
 
@@ -113,10 +113,10 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 
 \begin{enumerate}
 \begin{enumerate}
-	\item First, click the button {\it ``Wafer Load''} in the motion control sub-window. The Live Video window will show the focus position moving from the center of the chuck to the top edge of the chuck. Also, a message will be displayed saying that the wafer access interlock is open.
-	\item Next, open the probe station micro-chamber door. The chuck and chuck interlock should be visible as shown in Figure 6. Unlatch the chuck interlock and pull out the chuck. Pull the chuck all the way back until you feel a click. The chuck should now be held in place and will not go back after you let go of the latch.
-	\item Check to make sure that the {\it ``Turn Vacuum Off''} button is set on the Nucleus window. Otherwise, the vacuum will be ON before you place the wafer down.
-	\item Check to make sure the chuck surface and conductive rubber are both clean. If the surfaces are dirty, clean them using IPA solution.
+	\item First, click the {\it ``Wafer Load''} button \includegraphics[width=.05\textwidth]{wafer_load.png} in the motion control sub-window. The Live Video window will show the focus position moving from the center of the chuck to the top edge of the chuck.
+	\item Next, open the probe station micro-chamber door. A message will be displayed saying that the wafer access interlock is open. The chuck and chuck interlock should be visible as shown in Figure 6. Unlatch the chuck interlock and pull out the chuck. Pull the chuck all the way back until you feel a click. The chuck should now be held in place and will not go back after you let go of the latch.
+	\item Check to make sure that the {\it ``Vacuum Off''} button \includegraphics[width=.05\textwidth]{vacuum_off.png} in the main panel is set, indicating that the chuck's vacuum is off. Otherwise, the vacuum will be ON before you place the wafer down.
+	\item Check to make sure the chuck surface and conductive rubber (if being used) are both clean. If the surfaces are dirty, clean them using IPA solution.
 \end{enumerate}
 \end{enumerate}
 
@@ -138,13 +138,13 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 	\item Put the wafer slowly in the center of the conductive rubber. Once the wafer is placed on the chuck, release the vacuum button to leave the wafer on the chuck.
 	\\{\color{red}IMPORTANT: Once the wafer is released from the vacuum pen it may slide around on the rubber.}
 	\item Check that the wafer has been placed in the center of the chuck and make sure that all the vacuum holes on the conductive rubber are covered. If the wafer is not centered, move it slowly to the center. Make sure you always handle the wafer along the flat edge. Also, note that the flat edge must be facing you when you place it.
-	\item Press the {\it ``Vacuum On''} button in main panel. Check with the tweezer or vacuum pen that the wafer is stuck to chuck and does not move.
+	\item Press the {\it ``Vacuum On''} button in the main panel (same location as the {\it ``Vacuum Off"} button, should look like this when the vacuum is on: \includegraphics[width=.05\textwidth]{vacuum_on.png}). Check with the tweezer or vacuum pen that the wafer is stuck to chuck and does not move.
 	\item Align the wafer as much as possible using an eyeball estimate. To do this, use the latch to push the wafer towards the micro-chamber so that edge of micro-chamber door is parallel to any of the major lines on the wafer. If the wafer is not aligned, turn off the vacuum and very slowly move the wafer to align it to edge of the chamber. Try to align it as much as possible. Fine alignment of the wafer will be done using software.
 	\item If the vacuum is off, turn it back on in the Nucleus window.
 	\item Push the chuck back into the probe station chamber and lock the latch.
 	\item Close the micro-chamber gate.
 	\item Turn the light ON by flipping the A-Zoom power switch.
-	\item In Nucleus click {\it ``Wafer Center''} in the motion control window.
+	\item In Nucleus click the {\it ``Wafer Center''} button \includegraphics[width=.05\textwidth]{wafer_center.png} in the motion control window.
 \end{enumerate}
 \end{enumerate}
 
@@ -152,6 +152,7 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 \newpage
 %Section 6 - Wafer alignment
 \section{Wafer alignment}
+{\color{red} If simply performing an IV test on a module or single-chip sensor, skip this section as well as the next and proceed to section 8: Probe tip setup.}
 \begin{enumerate}
 \begin{enumerate}
 	\item Zoom in (\textless 30) and adjust the focus.
@@ -205,7 +206,7 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 We are now ready to start the IV/CV scan. Make sure the Keithleys are connected properly to the probe tips and chuck.
 \begin{enumerate}
 \begin{enumerate}
-	\item Make sure ALL of the probes are a safe Z-distance above the wafer, then click on {\it ``Move the Z stage to contact''}. The symbol should turn green, indicating that the probe station is in contact mode. While in this mode you cannot move the chuck using the Nucleus software.
+	\item Make sure ALL of the probes are a safe Z-distance above the wafer, then click on the {\it ``Move Z Stage to Contact''} button \includegraphics[width=.05\textwidth]{z_stage_contact_off.png}. The symbol should turn green \includegraphics[width=.05\textwidth]{z_stage_contact_on.png}, indicating that the probe station is in contact mode. While in this mode you cannot move the chuck using the Nucleus software.
 	\item Move the probes above their respective pads. The probe tip that comes in at an angle is usually used for the Active area and the other probe tip is used for the Guard-ring.
 	\vspace{1mm}
 	\\NOTE: Make sure that the wires connecting the probe tips to the K6485s are correctly labeled, the K6485 with GPIB address 10 is used for measuring the Guard-ring and the K6485 with GPIB address 14 is used for measuring the Active area.
@@ -219,8 +220,8 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 \section{IV/CV measurement}
 \begin{enumerate}
 \begin{enumerate}
-	\item Open ``Automatic\_IV\_CV\_with\_XML\_Global\_Stop\_V1.1''.
-	\item On the front panel, set values for voltage ranges and voltage step size for both the IV and CV scans. Also, make sure the site number is set to the appropriate values for the IV and CV scans (For the 6-inch wafer there should be 22 sites for the IV scan and 12 for the CV scan). Finally make sure the file path is set to an appropriate location as this is where the data will be saved.
+	\item Open ``Automatic\_IV\_CV\_with\_XML\_Global\_Stop\_V1.1''. (For a simple IV scan of a module or single chip sensor, instead open ``asfdsafdsafdsa" and skip any steps in this process that are blue.)
+	\item On the front panel, set values for voltage ranges and voltage step size for both the IV and CV scans. {\color{blue}Also, make sure the site number is set to the appropriate values for the IV and CV scans (for the 6-inch wafer there should be 22 sites for the IV scan and 12 for the CV scan).} Finally make sure the file path is set to an appropriate location as this is where the data will be saved.
 	\item Run the program.
 \newpage
 	\item You will be prompted to fill out various fields that are used to document the data:
@@ -230,7 +231,7 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 		\item {\it Comment Description} (optional): A field used in the XML output.
 		\item {\it User} (optional): A field used in the XML output
 	\end{enumerate}
-	\item Next a prompt to Skip Subsite will appear, if for whatever reason you do not wish to collect data on this site click {\it ``Skip''}, otherwise click {\it ``Continue''}.
+	{\color{blue}\item Next a prompt to Skip Subsite will appear, if for whatever reason you do not wish to collect data on this site click {\it ``Skip''}, otherwise click {\it ``Continue''}.}
 	\item At this point the Labview code makes a check to see if the probe tips are in contact. If they are not, an error window will appear indicating that the probes did not go into contact with the pads. If the error occurs, follow these steps:
 	\begin{enumerate}
 		\item Check to make sure that the K237 is in Standby mode. If it isn’t, attempt to manually set it to standby mode.
@@ -238,16 +239,16 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 		\vspace{1mm}
 		\\NOTE: If the K237 is not in Standby mode when the light is switched on you WILL arc the sensor and possibly ruin the entire wafer. So make sure that the light is only turned on when the K237 is in standby.
 		\item Check to see if the probes are still aligned with their respective pads. If they are, very gently lower the probe tips until they are in contact with the pads.
-		\item Another possibility for the contact check is that the probe station did not go back into contact mode after moving to the site. To check this, look at the status of the Stage Height in the Motion Control window. If it is set to {\it ``Separate''} check to make sure the probes are aligned above their respective pads and then click {\it ``Move Stage to Contact''}.
+		\item Another possibility for the contact check is that the probe station did not go back into contact mode after moving to the site. To check this, look at the status of the Stage Height in the Motion Control window. If it is set to {\it ``Separate''} \includegraphics[width=.05\textwidth]{z_stage_separate_on.png} check to make sure the probes are aligned above their respective pads and then click {\it ``Move Z Stage to Contact''} \includegraphics[width=.05\textwidth]{z_stage_contact_off.png}.
 		\item VERY IMPORTANT: Turn the light off.
 		\item Retry the contact check. If the error occurs again, repeat steps i-v or choose to skip the current site.
 		\vspace{1mm}
 		\\NOTE: If the contact check failed due to the stage being stuck in Separate mode, the stage will remain in Separate mode for the remainder of the scan unless you move it back to Contact mode. Make sure you only do this during the contact check error window and make sure that the probes are in the correct positions before changing the stage mode.
 	\end{enumerate}
 	\item When the contact check passes, the Labview code will begin the IV scan and data should begin to appear on the graphs in the Front Panel.
-	\item After the scan completes for the current site the code will move to the next site, so repeat steps e-g.
+	{\color{blue}\item After the scan completes for the current site the code will move to the next site, so repeat steps e-g.
 	\item After all the sites have been scanned, a new window will appear indicating that the IV scan is complete. At this point switch the wiring setup to CV. Only after you are sure that the wiring is correct should you hit continue.
-	\item A similar window asking if you would like to skip the current subsite will appear during the CV scan. Click {\it ``Skip''} if you do not wish to take data for the current site or {\it ``Continue''} if you do.
+	\item A similar window asking if you would like to skip the current subsite will appear during the CV scan. Click {\it ``Skip''} if you do not wish to take data for the current site or {\it ``Continue''} if you do.}
 \end{enumerate}
 \end{enumerate}
 
@@ -259,10 +260,10 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 	\item Make sure that all the instruments are in Standby and sourcing no voltage.
 	\item Turn the light ON.
 	\item Manually raise the probe tips well above the wafer using the knobs on the probe station.
-	\item Click the {\it ``Move the Z Stage to separate''} button in the Motion Control window.
-	\item Click the {\it ``Wafer Load''} button the Nucleus Motion Control window. This will bring the chuck forward so that it can be pulled out and accessed easily.
+	\item Click the {\it ``Move the Z Stage to separate''} button \includegraphics[width=.05\textwidth]{z_stage_separate_off.png} in the Motion Control window. It should turn red to indicate that the probe station is in separate mode \includegraphics[width=.05\textwidth]{z_stage_separate_on.png}.
+	\item Click the {\it ``Wafer Load''} button \includegraphics[width=.05\textwidth]{wafer_load.png} the Nucleus Motion Control window. This will bring the chuck forward so that it can be pulled out and accessed easily.
 	\item Open the micro-chamber gate. Pull out the chuck and secure it in place.
-	\item Click the {\it ``Turn Vacuum OFF''} symbol on the Nucleus window.
+	\item Click the {\it ``Turn Vacuum OFF''} symbol (should look like this when the vacuum is turned off: \includegraphics[width=.05\textwidth]{vacuum_off.png}) on the Nucleus window.
 	\item Use the Vacuum Pen and spatula to very carefully remove the wafer from the conductive rubber. This step can take a very long time and it is very important that the wafer is removed carefully as the rubber will have adhered to the wafer, making peeling the wafer off of the rubber very tricky.
 	\item Place the wafer back in its case. Make sure that you place it in the correct side of the wafer container.
 	\item Place the wafer container back in the dry box.
@@ -272,8 +273,8 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 \end{enumerate}
 
 
-\vspace{10mm}
-This concludes the tutorial for operating the probe station for an Automatic IV/CV scan.
+%\vspace{10mm}
+%This concludes the tutorial for operating the probe station for an Automatic IV/CV scan.
 
 
 \end{document}
