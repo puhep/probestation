@@ -186,9 +186,9 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 \begin{enumerate}
 	\item First move the crosshair to Site 1 on the wafer. For the 6-inch wafers this is the diode in the lower left corner as shown in Figure 7.
 	\item Align the crosshair over the top left contact pad. Make sure that the probe tips can reach their respective pads.
-	\item Right click on the Live Video window and select {\it ``Set Reference in Place''}.
 	\item If not already open, open the Wafer Map window from the Nucleus window.
 	\item Make sure that the correct wafer map is loaded. To check this, simply look at the top of the Wafer Map window and note the name of the wafer map. For the 6-inch wafers the correct wafer map is ``2013\_6-inch\_wafer\_map1.wfd''.
+	\item Right click on the Live Video window and select {\it ``Set Reference in Place''}.
 	\item Click on the {\it ``Sub Die''} button in the Wafer Map window. This will open another window that shows the relative positions of all the sites with respect to Site 1. If the reference position was correctly set to Site 1, double clicking on any of the other site numbers in the Sub Die window will move the probes to that site. If, after selecting another site, the probes do not move to the correct location, either the wrong wafer map is loaded or the reference position was not set correctly.
 	\vspace{1mm}
 	\\NOTE: In Nucleus, the site numbers are counted starting from 0, so Site 1 in Nucleus is Label 0, Site 21 is Label 20, and so on.
@@ -207,6 +207,11 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 We are now ready to start the IV/CV scan. Make sure the Keithleys are connected properly to the probe tips and chuck.
 \begin{enumerate}
 \begin{enumerate}
+	\item Before moving to contact, check the contact settings. Right-click the {\it ``Move Z Stage to Contact''} button \includegraphics[width=.05\textwidth]{z_stage_contact_off.png} and ensure that the settings under ``Chuck'' are as follows:
+	\begin{enumerate}
+		\item {\it Contact}: 1000 um
+		\item {\it Separate Distance}: 500 um
+	\end{enumerate}
 	\item Make sure ALL of the probes are a safe Z-distance above the wafer, then click on the {\it ``Move Z Stage to Contact''} button \includegraphics[width=.05\textwidth]{z_stage_contact_off.png}. The symbol should turn green \includegraphics[width=.05\textwidth]{z_stage_contact_on.png}, indicating that the probe station is in contact mode. While in this mode you cannot move the chuck using the Nucleus software.
 	\item Move the probes above their respective pads. The probe tip that comes in at an angle is usually used for the Active area and the other probe tip is used for the Guard-ring.
 	\vspace{1mm}
@@ -217,14 +222,14 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 \end{enumerate}
 
 
+\newpage
 %Section 9 - IV/CV measurement
 \section{IV/CV measurement}
 \begin{enumerate}
 \begin{enumerate}
-	\item Open ``Automatic\_IV\_CV\_with\_XML\_Global\_Stop\_V1.1.vi''.\\(For a simple IV scan of a module or single chip sensor, instead open\\``Manual IV\_K237\_K6485\_V1.4 with XML Output.vi" and skip any steps in this process that are blue.)
+	\item Open ``C:\textbackslash Documents and Settings\textbackslash PROBER\textbackslash My Documents\textbackslash GitHub\textbackslash probestation\textbackslash\\Automatic\_IV\_CV\_with\_XML\_Global\_Stop\_V1.2.vi''.\\{\color{red}(For a simple IV scan of a module or single chip sensor, instead open\\``Manual IV\_K237\_K6485\_V1.4 with XML Output.vi" and skip any steps in this process that are blue. That should give you a rough guideline of your process.)}
 	\item On the front panel, set values for voltage ranges and voltage step size for both the IV and CV scans. {\color{blue}Also, make sure the site number is set to the appropriate values for the IV and CV scans (for the 6-inch wafer there should be 22 sites for the IV scan and 12 for the CV scan).} Finally make sure the file path is set to an appropriate location as this is where the data will be saved.
 	\item Run the program.
-\newpage
 	\item You will be prompted to fill out various fields that are used to document the data:
 	\begin{enumerate}
 		\item {\it Wafer ID\#}: The ID number of the wafer currently being tested.
@@ -248,12 +253,18 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 	\end{enumerate}
 	\item When the contact check passes, the Labview code will begin the IV scan and data should begin to appear on the graphs in the Front Panel.
 	{\color{blue}\item After the scan completes for the current site the code will move to the next site, so repeat steps e-g.
-	\item After all the sites have been scanned, a new window will appear indicating that the IV scan is complete. At this point switch the wiring setup to CV. Only after you are sure that the wiring is correct should you hit continue.
+	\item After all the sites have been scanned, a new window will appear indicating that the IV scan is complete. At this point switch the wiring setup to CV by following the substeps below. Only after you are sure that the wiring is correct should you hit continue.
+	\begin{enumerate}
+		\item Take the cable for the bias from the back of the Kiethley and plug it into the red T-junction input.
+		\item Take the cable for the active area from the GPIB14 meter and plug it into the black T-junction input.
+		\item Connect the back of the LCR meter to the source meter, using the wire that is hanging on the rack at the side. Here, you should be connecting the Kiethley to the QuadTech.
+	\end{enumerate}
 	\item A similar window asking if you would like to skip the current subsite will appear during the CV scan. Click {\it ``Skip''} if you do not wish to take data for the current site or {\it ``Continue''} if you do.}
 \end{enumerate}
 \end{enumerate}
 
 
+\newpage
 %Section 10 - Shutting down
 \section{Shutting down}
 \begin{enumerate}
