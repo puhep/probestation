@@ -16,7 +16,7 @@
 
 \begin{center}
 \bf \LARGE
-P3MD LAB -\\PROBE STATION INSTRUCTIONS v2.2
+P3MD LAB -\\PROBE STATION INSTRUCTIONS v2.3
 \end{center}
 \vspace{5mm}
 
@@ -62,7 +62,7 @@ Figure 2 shows the various instruments used for focusing and holding the wafer. 
 
 \vspace{2mm}
 {\color{red}
-IF YOU SEE ANY INSTRUMENT NOT WORKING OR NOTICE ANYTHING UNUSUAL, PLEASE INFORM A SENIOR IN THE LAB IMMEDIATELY!}
+IF YOU SEE ANY INSTRUMENT NOT WORKING OR NOTICE ANYTHING UNUSUAL, PLEASE INFORM A SENIOR MEMBER IN THE LAB IMMEDIATELY!}
 \vspace{2mm}
 
 \begin{figure}[h!]
@@ -123,16 +123,17 @@ The main windows that open are the Nucleus main panel, Live Video, and Motion Co
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.455\textwidth]{chuck1.png}
-	\includegraphics[width=0.445\textwidth]{chuck2.png}
+	\includegraphics[width=0.4\textwidth]{chuck1.png}
+	\includegraphics[width=0.39\textwidth]{chuck2.png}
 	\caption{Chuck and loading surface.}
 \end{figure}
 
+\newpage
 %Section 5 - Wafer loading
 \section{Wafer loading}
 \begin{enumerate}
 \begin{enumerate}
-	\item Check if the lever arm is down. If not, lower the lever arm.
+	\item Check if the lever arm on the left side of the probe station is down. If not, lower the lever arm (to lower the platen).
 	\item Make sure the vacuum pump is turned on.
 	\item Take a wafer from the dry box cabinet in the soft-wall clean room. Use the vacuum holder to lift the wafer from the wafer box. Use tweezers or spatula-like pinchers to hold the end of wafer while vacuum holder is still on. Be very careful when handling the wafer.
 	\\{\color{red}IMPORTANT: Make sure that the vacuum holder black button is always PRESSED ON when the wafer is held; otherwise the wafer will fall on ground.}
@@ -217,7 +218,7 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 	\vspace{1mm}
 	\\NOTE: Make sure that the wires connecting the probe tips to the K6485s are correctly labeled, the K6485 with GPIB address 10 is used for measuring the Guard-ring and the K6485 with GPIB address 14 is used for measuring the Active area.
 	\item Using the knobs on the probe station, lower the probe tips into contact with the pads. If the K6485s are in local mode you should hear a set of clicks when the probe tips first make contact with the pads and the K6485s should also be reading small current value. You should also see the probe tips move forward slightly when they make contact.
-	\item Turn the light off.
+	\item {\color{red}Turn the light off.}
 \end{enumerate}
 \end{enumerate}
 
@@ -273,6 +274,7 @@ We are now ready to start the IV/CV scan. Make sure the Keithleys are connected 
 	\item Turn the light ON.
 	\item Manually raise the probe tips well above the wafer using the knobs on the probe station.
 	\item Click the {\it ``Move the Z Stage to separate''} button \includegraphics[width=.05\textwidth]{z_stage_separate_off.png} in the Motion Control window. It should turn red to indicate that the probe station is in separate mode \includegraphics[width=.05\textwidth]{z_stage_separate_on.png}.
+	\item For additional separation, raise the lever arm on the side of the probe station to raise the platen.
 	\item Click the {\it ``Wafer Load''} button \includegraphics[width=.05\textwidth]{wafer_load.png} the Nucleus Motion Control window. This will bring the chuck forward so that it can be pulled out and accessed easily.
 	\item Open the micro-chamber gate. Pull out the chuck and secure it in place.
 	\item Click the {\it ``Turn Vacuum OFF''} symbol (should look like this when the vacuum is turned off: \includegraphics[width=.05\textwidth]{vacuum_off.png}) on the Nucleus window.
